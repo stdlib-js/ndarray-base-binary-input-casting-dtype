@@ -54,7 +54,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import binaryInputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@deno/mod.js';
+import binaryInputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@v0.1.0-deno/mod.js';
 ```
 
 #### binaryInputCastingDataType( idtype1, idtype2, odtype, policy )
@@ -114,7 +114,7 @@ import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-funct
 import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js';
 import nCartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-n-cartesian-product@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import inputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@deno/mod.js';
+import inputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@v0.1.0-deno/mod.js';
 
 var idt1 = [
     'float32',
