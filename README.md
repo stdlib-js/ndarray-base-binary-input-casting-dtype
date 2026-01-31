@@ -54,7 +54,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import binaryInputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@esm/index.mjs';
+import binaryInputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@v0.1.0-esm/index.mjs';
 ```
 
 #### binaryInputCastingDataType( idtype1, idtype2, odtype, policy )
@@ -119,7 +119,7 @@ import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-funct
 import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@esm/index.mjs';
 import nCartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-n-cartesian-product@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import inputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@esm/index.mjs';
+import inputCastingDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@v0.1.0-esm/index.mjs';
 
 var idt1 = [
     'float32',
