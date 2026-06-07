@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-20)
+## Unreleased (2026-06-07)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - **fix:** use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665) _(by Philipp Burckhardt, Athan Reines)_
 -   [`ad8f9b5`](https://github.com/stdlib-js/stdlib/commit/ad8f9b59d9838fadeac1c3a7d53a5c6cfcf11365) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11431)](https://github.com/stdlib-js/stdlib/pull/11431) _(by Karan Anand)_
 
 </details>
@@ -24,9 +35,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
