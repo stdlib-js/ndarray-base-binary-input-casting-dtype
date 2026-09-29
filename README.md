@@ -45,25 +45,7 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-base-binary-input-casting-dtype
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
@@ -71,8 +53,32 @@ To view installation and usage instructions specific to each branch build, be su
 
 <!-- eslint-disable id-length -->
 
+To use in Observable,
+
 ```javascript
-var binaryInputCastingDataType = require( '@stdlib/ndarray-base-binary-input-casting-dtype' );
+binaryInputCastingDataType = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var binaryInputCastingDataType = require( 'path/to/vendor/umd/ndarray-base-binary-input-casting-dtype/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.binaryInputCastingDataType;
+})();
+</script>
 ```
 
 #### binaryInputCastingDataType( idtype1, idtype2, odtype, policy )
@@ -127,12 +133,17 @@ dt = binaryInputCastingDataType( 'int32', 'float64', 'float64', 'complex128' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var unzip = require( '@stdlib/utils-unzip' );
-var nCartesianProduct = require( '@stdlib/array-base-n-cartesian-product' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var inputCastingDataType = require( '@stdlib/ndarray-base-binary-input-casting-dtype' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-n-cartesian-product@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-input-casting-dtype@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var idt1 = [
     'float32',
@@ -168,6 +179,11 @@ args = unzip( args );
 
 // Resolve casting data types:
 logEachMap( 'dtypes: (%10s, %10s, %10s). policy: %20s. result: %10s.', args[ 0 ], args[ 1 ], args[ 2 ], args[ 3 ], naryFunction( inputCastingDataType, 4 ) );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -262,9 +278,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-binary-input-casting-dtype/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
 
-[@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray-input-casting-policies
+[@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray-input-casting-policies/tree/umd
 
 </section>
 
